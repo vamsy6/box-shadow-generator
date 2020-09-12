@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Box shadow generator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	 <nav>
+	 <div class="nav-bar">
+	 		<div class="logo">
+        <h1>BOX SHADOW GENERATOR</h1>
+         </div>
+	 </div>
+	 </nav>
+	 
+	 <div class="container">
+	 	<div class="background">
+	 		<div class="box"></div>
+	 	</div>
+	 	
+	 	<div class="color-prop">
+	 		<div class="box-color">
+	 		<label for="box-color">Box color:</label>
+	 		<input type="color"  name="box-color" id="box-color" value="#121212">
+	 	</div>
+	 	<div class="background-color">
+	 	<label for="background">Background:</label>
+	 		<input type="color"  name="background-color" id="background-color" value="#ffffff">
+	 	</div>
+	 </div>
+	 	</div>
+	 	
+	 	
+	 	
+	 	<div class="settings">
+	 	<div class="inputs">
+	 		<div class="input">
+	 			<label for="horizontal">Horizontal:</label>
+	 			<input type="number" name="horizontal-offset" id="horizontal-offset" value="10">
+	 		</div>
+	 		<div class="input">
+	 			<label for="vertical">Vertical:</label>
+	 			<input type="number" name="horizontal-offset" id="vertical-offset" value="10">
+	 		</div>
+	 		<div class="input">
+	 			<label for="blur-radius">Horizontal:</label>
+	 			<input type="number" name="blur" id="blur" value="5">
+	 		</div>
+	 		<div class="input">
+	 			<label for="spread">Spread:</label>
+	 			<input type="number" name="spread-radius" id="spread" value="0">
+	 		</div>
+	 		<div class="input">
+	 		<label for="color">Color:</label>
+	 		<input type="color"  name="background-color" id="background-color" value="#000000">
+	 		</div>
+	 		<div class="input">
+	 			<label for="opacity">Opacity:</label>
+	 			<input type="number" name="opacity" id="opacity" max="1" min="0" step="0.01" value="0.55">
+	 		</div>
+	 		
+	 		<div class="input">
+	 		 <label for="inset">Inset:</label>
+	 			<input type="checkbox" name="inset" id="inset" >
+	 		</div>
+	 	</div>
+	 		
+ 	<div class="generated-css-container">
+  <div id="generated-css">box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);</div>
+	 	</div>
+	 	
+	 	
+	 	
+	
+	
+	
+	
+<script src="main.js"></script>
+</body>
+</html>
