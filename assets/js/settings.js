@@ -13,6 +13,12 @@ class BoxSettings {
     this.opactiyValue = opactiyValue;
   }
 
+  // Change box settings
+  changeSettings = (box) => {
+    box.style.boxShadow = `${this.horizontalOffsetValue} ${this.verticalOffsetValue} ${this.blurValue} ${this.spreadValue} rgba(0, 0, 0, ${this.opactiyValue})`;
+  };
+
+  // Get box's current settings
   getSettings = () => {
     return {
       horizontalOffset: `${this.horizontalOffsetValue}`,
@@ -21,8 +27,5 @@ class BoxSettings {
       spread: `${this.spreadValue}`,
       opactiy: `${this.opactiyValue}`,
     };
-  };
-  changeBoxSettings = (box) => {
-    box.style.boxShadow = `${this.horizontalOffsetValue} ${this.verticalOffsetValue} ${this.blurValue} ${this.spreadValue} rgba(0, 0, 0, ${this.opactiyValue})`;
   };
 }
