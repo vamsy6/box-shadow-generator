@@ -15,17 +15,11 @@ class BoxSettings {
 
   // Change box settings
   changeSettings = (box) => {
-    box.style.boxShadow = `${this.horizontalOffsetValue} ${this.verticalOffsetValue} ${this.blurValue} ${this.spreadValue} rgba(0, 0, 0, ${this.opactiyValue})`;
+    box.style.boxShadow = `${this.horizontalOffsetValue}px ${this.verticalOffsetValue}px ${this.blurValue}px ${this.spreadValue}px rgba(0, 0, 0, ${this.opactiyValue})`;
   };
 
   // Get box's current settings
-  getSettings = () => {
-    return {
-      horizontalOffset: `${this.horizontalOffsetValue}`,
-      verticalOffset: `${this.verticalOffsetValue}`,
-      blur: `${this.blurValue}`,
-      spread: `${this.spreadValue}`,
-      opactiy: `${this.opactiyValue}`,
-    };
+  getSettings = (box) => {
+    return `${box.style.boxShadow}`;
   };
 }

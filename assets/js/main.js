@@ -23,6 +23,8 @@ function callClass() {
     spread.value,
     opacity.value
   );
+  boxSettings.changeSettings(box);
+  console.log((boxSettings.getSettings(box)))
 }
 
 loadEventListeners();
