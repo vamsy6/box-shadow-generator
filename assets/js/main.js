@@ -3,7 +3,8 @@ const horizontalOffset = document.querySelector("#horizontal-offset"),
   verticalOffset = document.querySelector("#vertical-offset"),
   blur = document.querySelector("#blur"),
   spread = document.querySelector("#spread"),
-  opactiy = document.querySelector("#opactiy");
+  opactiy = document.querySelector("#opactiy"),
+  generatedCSS = document.querySelector("#generated-css");
 
 const box = document.querySelector(".box");
 
@@ -24,6 +25,7 @@ function callClass() {
     opacity.value
   );
   boxSettings.changeSettings(box);
+  generatedCSS.textContent = `box-shadow: ${horizontalOffset.value}px ${verticalOffset.value}px ${blur.value}px ${spread.value}px rgba(0,0,0,${opacity.value})`;
 }
 
 loadEventListeners();
