@@ -32,6 +32,7 @@ function callClass() {
 
 function copyCSS() {
   navigator.clipboard.writeText(`${generatedCSS.textContent}`);
+  alert("CSS copied successfully")
 }
 
 loadEventListeners();
